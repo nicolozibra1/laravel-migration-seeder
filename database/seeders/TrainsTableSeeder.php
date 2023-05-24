@@ -22,16 +22,17 @@ class TrainsTableSeeder extends Seeder
         // $houses = json_decode($houses, true);
 
         // con array php in config
-        //$houses = config('nomefile');
+        $companyNames = config('db.company_names');
+        $cities = config('db.cities');
 
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < 25; $i++) {
             $newTrain = new Train();
 
-            $newTrain->company = $faker->company();
-            $newTrain->departure_station = $faker->city();
-            $newTrain->arrival_station = $faker->city();
-            $newTrain->departure_time = $faker->time('H:i:s');
-            $newTrain->arrival_time = $faker->time('H:i:s');
+            $newTrain->company = $faker->randomElement($companyNames);
+            $newTrain->departure_station = $faker->randomElement($cities);
+            $newTrain->arrival_station = $faker->randomElement($cities);
+            $newTrain->departure_time = $faker->time('H:i');
+            $newTrain->arrival_time = $faker->time('H:i');
             $newTrain->train_code = $faker->randomNumber(4);
             $newTrain->carriage_count = $faker->numberBetween(1, 10);
             $newTrain->on_schedule = $faker->boolean();
