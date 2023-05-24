@@ -9,3 +9,85 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color: #F2EFEB;
+}
+header{
+    height: 80px;
+    background-color: #013A40;
+}
+.box-logo{
+    width: 200px;
+}
+.jumbo{
+    height: 600px;
+    position: relative;
+}
+.jumbo img{
+    width: 100%;
+    height: 100%;
+}
+.jumbo h1{
+    position: absolute;
+    bottom:80px;
+    left: 300px;
+}
+.generate:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #013A40;
+}
+.cancel:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(141, 13, 13);
+}
+.highlighter{
+    color: #F25C05;
+}
+#print-nameclient h2, #print-age h2, #discount h2{
+    font-size: 0.8rem;
+    margin-top: -5px;
+}
+#print-date h4{
+    font-size: 0.8rem;
+}
+.card thead th{
+    width: calc(100% / 4);
+}
+
+#container input{
+    width: 75%;
+    border: none;
+    border-bottom: 2px solid #013A40;
+    padding-bottom: 5px;
+}
+#age{
+    width: 75%;
+    border: none;
+    border-bottom: 2px solid #013A40;
+    padding-bottom: 5px;
+}
+.card-input{
+    width: 90%;
+    margin: auto;
+    margin-top: -50px;
+}
+.card-input .card-header{
+    background-color:white;
+}
+.card-output{
+    margin-bottom: 50px;
+    background-color:#013A40;
+}
+.box-name{
+    background-color: #F2EFEB;
+    margin-bottom: 20px;
+}
+#departing-trains{
+    background-color: white;
+    padding: 40px 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
